@@ -1,0 +1,16 @@
+#! /bin/bash
+
+# This is a bash make script. Run it with "./mk" on your command line
+# if it doesn't work, you may need to make it executable with "chmod +x mk"
+# KC uses them in class.
+
+# If you script is not compiling, try running this line in your command line
+# sudo apt install gcc-multilib
+
+# Also note it is *not strictly necessary* to compile with 32 bits for this lab.
+# Therefore, the -m32 flag has been omitted below.
+# Do not add -m32 back unless you add a `sudo apt install ` of the supporting 
+# libraries as GitHub classroom spins up a fresh server to test the push
+# and will not have the extra libraries.
+
+gcc t.c

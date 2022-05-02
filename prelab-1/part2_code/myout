@@ -1,0 +1,125 @@
+enter main
+&argc=ff8b5910 argv=ff8b59a4 env=ff8b59b8
+&a=ff8b58d0 &b=ff8b58d4 &c=ff8b58d8
+enter A
+&d=ff8b5890 &e=ff8b5894 &f=ff8b5898
+enter B
+&g=ff8b5860 &h=ff8b5864 &i=ff8b5868
+enter C
+&u=ff8b5824 &v=ff8b5828 &w=ff8b582c &i=ff8b5830 &p=ff8b5834
+&FP=ff8b5848
+FF8B5848 -> FF8B5878 -> FF8B58A8 -> FF8B58F8 -> NULL
+
+ff8b5824 =        a u = 10
+ff8b5828 =        b v = 11
+ff8b582c =        c w = 12
+ff8b5830 =        3 i =13
+ff8b5834 = ff8b5834 p
+ff8b5838 =        0
+ff8b583c = 34207a00
+ff8b5840 = ff8b5910
+ff8b5844 = 56650fcc
+ff8b5848 = ff8b5878 FP *FP
+ff8b584c = 5664e3ca retPC
+ff8b5850 =        7
+ff8b5854 =        8
+ff8b5858 = ff8b5864
+ff8b585c = ff8b5868
+ff8b5860 =        7 g = 7
+ff8b5864 =        8 h = 8
+ff8b5868 =        9 i = 9
+ff8b586c = 34207a00
+ff8b5870 = ff8b5910
+ff8b5874 = 56650fcc
+ff8b5878 = ff8b58a8 FP *FP
+ff8b587c = 5664e32b retPC
+ff8b5880 =        4
+ff8b5884 =        5
+ff8b5888 = ff8b5894
+ff8b588c = ff8b5898
+ff8b5890 =        4 d = 4
+ff8b5894 =        5 e = 5
+ff8b5898 =        6 f = 6
+ff8b589c = 34207a00
+ff8b58a0 = ff8b5910
+ff8b58a4 = 56650fcc
+ff8b58a8 = ff8b58f8 FP *FP
+ff8b58ac = 5664e282 retPC
+ff8b58b0 =        1
+ff8b58b4 =        2
+ff8b58b8 = ff8b58d4
+ff8b58bc = ff8b58d8
+ff8b58c0 = f7f86000
+ff8b58c4 = f7fab2d0
+ff8b58c8 = ff8b59b8
+ff8b58cc = ff8b59a4
+ff8b58d0 =        1 a = 1
+ff8b58d4 =        2 b = 2
+ff8b58d8 =        3 c = 3
+ff8b58dc = 34207a00
+ff8b58e0 =        4
+ff8b58e4 = ff8b59a4
+ff8b58e8 = ff8b59b8
+ff8b58ec = ff8b5910
+ff8b58f0 =        0
+ff8b58f4 = f7f86000
+ff8b58f8 =        0 FP *FP
+ff8b58fc = f7dbdee5
+ff8b5900 = f7f86000
+ff8b5904 = f7f86000
+ff8b5908 =        0
+ff8b590c = f7dbdee5
+ff8b5910 =        4 argc = 4
+ff8b5914 = ff8b59a4 argv location
+ff8b5918 = ff8b59b8 env location
+ff8b591c = ff8b5934
+ff8b5920 = f7f86000
+ff8b5924 = f7fc6000
+ff8b5928 = ff8b5988
+ff8b592c =        0
+ff8b5930 = f7fc6990
+ff8b5934 =        0
+ff8b5938 = f7f86000
+ff8b593c = f7f86000
+ff8b5940 =        0
+ff8b5944 = eec67fbe
+ff8b5948 = 4fc919ae
+ff8b594c =        0
+ff8b5950 =        0
+ff8b5954 =        0
+ff8b5958 =        0
+ff8b595c =        0
+ff8b5960 =        0
+ff8b5964 =        0
+ff8b5968 = f7fab17d
+ff8b596c = 56650fcc
+ff8b5970 =        4
+ff8b5974 = 5664e0a0
+ff8b5978 =        0
+ff8b597c = 5664e0d5
+ff8b5980 = 5664e1dd
+ff8b5984 =        4
+ff8b5988 = ff8b59a4
+ff8b598c = 5664e550
+ff8b5990 = 5664e5c0
+ff8b5994 = f7fab2d0
+ff8b5998 = ff8b599c
+ff8b599c =       1c
+ff8b59a0 =        4
+ff8b59a4 = ff8b7754
+ff8b59a8 = ff8b775c
+ff8b59ac = ff8b7760
+ff8b59b0 = ff8b7764
+ff8b59b4 =        0
+ff8b59b8 = ff8b776a
+ff8b59bc = ff8b777a
+ff8b59c0 = ff8b77a5
+ff8b59c4 = ff8b77b2
+ff8b59c8 = ff8b77c7
+ff8b59cc = ff8b77d6
+ff8b59d0 = ff8b77e1
+ff8b59d4 = ff8b77ee
+ff8b59d8 = ff8b7dd0
+exit B
+exit A
+exit main

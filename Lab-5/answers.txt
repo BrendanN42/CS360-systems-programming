@@ -1,0 +1,43 @@
+Instructions: Please add this file to your git repo with the name `answers.txt`. 
+
+
+1) Describe what the Super Node is and what role it plays in the EXT2 file system. 
+
+A: a Superblock contains information about the entire file system.. Therefore in the EXT2 file system, the superblock 
+lets us get all the information of the file system by just reading the block. The superblock also lets us know if the file system is EXT2 or not.
+
+==========================================================================================================================================================================================================================================
+2) Describe what the INODE is and what role it plays in the EXT2 file system.
+
+A: Every file in a EXT2 system is represented by a unique INODE. An an INODE consists of a lot of information of a file for example, owner UID, file size, file type, etc.
+==========================================================================================================================================================================================================================================
+
+3) If we want inode number 10151 describe the algorithm needed get INODE * pointer pointing at it.
+A: 
+        1. First thing would be read in the GD block #2 by calling in get_block function. Next we would intialize a variable called inodes_block to be equal to to the bg_inode_table (similar to the third step in the lab).
+        get_block(fd,2,buf);
+        gp = (GD *)buf;
+        inodes_block=gp->bg_inode_table;
+
+        2. after this, read in the inodes_block using the get_block function and initialize the INODE *pointer
+        get_block(fd,inodes_block,buf);
+        INODE *pointer = (INODE *)buf;
+
+        3. now to get pointer to point to inode number 10151 add 10150 to the pointer;
+
+        pointer+=10150;
+        Now INODE *pointer is pointing at inode number 10151
+
+==========================================================================================================================================================================================================================================
+4) How many blocks can a single INODE * struct have at its disposal?
+
+A: a single INODE can only point to 15 blocks. 
+
+==========================================================================================================================================================================================================================================
+5) Describe what the content (in a general case) you might find in the block of memory you get from *ip -> i_block[i]
+
+A: it will print out an integer that represents the block number
+==========================================================================================================================================================================================================================================
+6) If `ip -> i_block[0] = 0;` what does that mean?
+
+A: this mean that there is no more blocks allocated in the INODE
